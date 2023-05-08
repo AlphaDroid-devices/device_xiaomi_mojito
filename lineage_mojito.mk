@@ -14,7 +14,12 @@ $(call inherit-product, device/xiaomi/mojito/device.mk)
 # Inherit some common lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Product Specifics
+# Alpha internal properties
+ALPHA_BUILD_TYPE := Official
+ALPHA_MAINTAINER := ⓓⓑⓛⓔⓝⓚ
+TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 PRODUCT_NAME := lineage_mojito
 PRODUCT_DEVICE := mojito
 PRODUCT_BRAND := Redmi
